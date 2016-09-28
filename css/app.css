@@ -1,22 +1,22 @@
-@import url(http://fonts.googleapis.com/css?family=Exo:200,500);
-@import "http://weloveiconfonts.com/api/?family=entypo";
-[class*="entypo-"]:before {
-    font-family: "entypo", sans-serif;
-}
-
-html,
 body {
-    background: #fff;
-    padding: 60px 15px;
-    color: #777;
+    font-family: 'Karla', sans-serif;
+    text-align: justify;
 }
 
 header {
+    font-size: 2em;
+    margin-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3%;
     letter-spacing: -0.05em;
     font-family: "Exo", sans-serif;
     color: #3f5b80;
-    text-align: center;
     font-size: 3em;
+}
+
+a {
+    font-style: oblique;
 }
 
 p {
@@ -47,7 +47,7 @@ nav {
     width: 100%;
     top: 0;
     min-height: 50px;
-    height: 70px;
+    height: 80px;
     text-align: center;
     background-color: transparent;
     transition: .5s;
@@ -99,4 +99,85 @@ nav.scrolling {
     float: left;
     height: 8vh;
     margin-top: 1%;
+}
+
+.small-11 {
+    text-align: center;
+}
+
+.large-6 {
+    width: 100%;
+    text-align: center;
+}
+
+.client {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.faking {
+    margin-top: 5%;
+}
+
+.about {
+    background-color: #eee;
+}
+
+.titanium {
+    margin-bottom: 3%;
+}
+
+.company {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mailer {
+    width: 50%;
+}
+
+.email {
+    margin-left: 5%;
+}
+
+.number {
+    margin-left: -5%;
+}
+
+.formspree {
+    border: 2.5px solid transparent;
+    background: transparent;
+    border-bottom: #000 solid 3px;
+    color: #903;
+}
+
+.hiring {
+    border: 2.5px solid #903;
+    background: transparent;
+    margin-top: 0%;
+    width: 15%;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #903;
+    float: right;
+    margin-top: 5%;
+}
+
+form {
+    margin-top: 7%;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/backgrounds/map-image.png);
+    height: 100vh;
+}
+
+footer {
+    padding-top: 5%;
 }
