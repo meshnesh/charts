@@ -52,6 +52,7 @@ nav {
     background-color: transparent;
     transition: .5s;
     color: #000;
+    z-index: 1;
 }
 
 nav li {
@@ -94,6 +95,10 @@ nav.scrolling {
 
 
 /*********NAV BAR END**********/
+
+.home {
+    height: 100vh;
+}
 
 .logo-img {
     float: left;

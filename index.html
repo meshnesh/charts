@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Charts</title>
+    <link rel="icon" href="#" type="image/gif">
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css"> </head>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/smooth.css">
+</head>
 
 <body>
     <div class="column row">
@@ -26,10 +29,27 @@
             </div>
         </nav>
     </div>
-    <article>
-        <h1 id="section1">1. Info</h1>
-        <p>I have written the <b>Smooth Anchor Scrolling</b> to improve the weight of your callbacks. I was using Twitter's Bootstrap 3.0 when i wrote this and i'm surprised they haven't yet built anything in. Alas! I have written a super lightweight smooth scroll plugin free for you all to use. I have deliberately <b>not included</b> a plugin such as Scrollspy as i built this for use with Bootstrap that already has Scrollspy within.</p>
-    </article>
+    <div class="column row home">
+        <div id="captioned-gallery">
+            <figure class="slider">
+                <figure> <img src="imgs/backgrounds/create.jpg" alt>
+                    <!--<figcaption>Create, New Zealand</figcaption>-->
+                </figure>
+                <figure> <img src="imgs/backgrounds/2.jpg" alt>
+                    <!--<figcaption>Wanaka, New Zealand</figcaption>-->
+                </figure>
+                <figure> <img src="imgs/backgrounds/3.jpg" alt>
+                    <!--<figcaption>Utah, United States</figcaption>-->
+                </figure>
+                <figure> <img src="imgs/backgrounds/share-008.jpg" alt>
+                    <!--<figcaption>Bryce Canyon, Utah, United States</figcaption>-->
+                </figure>
+                <figure> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/hobbiton-lake.jpg" alt>
+                    <!--<figcaption>Hobbiton, New Zealand</figcaption>-->
+                </figure>
+            </figure>
+        </div>
+    </div>
     <!--    About section-->
     <div class="row about">
         <header id="section2">About</header>
@@ -134,6 +154,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/smooth.js"></script>
 </body>
 
 </html>

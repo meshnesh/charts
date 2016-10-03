@@ -2942,19 +2942,19 @@ html.is-reveal-open body {
   .reveal.without-overlay {
     position: fixed; }
 
-.slider {
-  position: relative;
-  height: 0.5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 2.25rem;
-  background-color: #e6e6e6;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -ms-touch-action: none;
-      touch-action: none; }
+/*.slider {*/
+  /*position: relative;*/
+  /*height: 0.5rem;*/
+  /*margin-top: 1.25rem;*/
+  /*margin-bottom: 2.25rem;*/
+  /*background-color: #e6e6e6;*/
+  /*cursor: pointer;*/
+  /*-webkit-user-select: none;*/
+     /*-moz-user-select: none;*/
+      /*-ms-user-select: none;*/
+          /*user-select: none;*/
+  /*-ms-touch-action: none;*/
+      /*touch-action: none; }*/
 
 .slider-fill {
   position: absolute;
