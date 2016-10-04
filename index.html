@@ -2,159 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charts</title>
-    <link rel="icon" href="#" type="image/gif">
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/smooth.css">
-</head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Charts</title>
+	<link rel="icon" href="#" type="image/gif">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/app.css"> </head>
 
 <body>
-    <div class="column row">
-        <nav class="nav ">
-            <div class="nav-center"> <a class="toggle-nav" href="#">&#9776;</a>
-                <div class="nav-mobile">
-                    <a href="#home"><img src="imgs/logo/charts_web_logo.png" class="logo-img"></a>
-                    <ul class="left">
-                        <li><a id="link1" class="nav-section1 hvr-underline-from-left active" href="#section1">Home</a></li>
-                        <li> <a id="link2" class="nav-section2 hvr-underline-from-left" href="#section2">About</a> </li>
-                        <li><a id="link3" class="nav-section3 hvr-underline-from-left" href="#section3"> Clients</a></li>
-                        <li><a id="link4" class="nav-section4 hvr-underline-from-left" href="#section4"> Contact</a></li>
-                        <li class="scrollTop"><a href="#"><span class="entypo-up-open"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="column row home">
-        <div id="captioned-gallery">
-            <figure class="slider">
-                <figure> <img src="imgs/backgrounds/create.jpg" alt>
-                    <!--<figcaption>Create, New Zealand</figcaption>-->
-                </figure>
-                <figure> <img src="imgs/backgrounds/2.jpg" alt>
-                    <!--<figcaption>Wanaka, New Zealand</figcaption>-->
-                </figure>
-                <figure> <img src="imgs/backgrounds/3.jpg" alt>
-                    <!--<figcaption>Utah, United States</figcaption>-->
-                </figure>
-                <figure> <img src="imgs/backgrounds/share-008.jpg" alt>
-                    <!--<figcaption>Bryce Canyon, Utah, United States</figcaption>-->
-                </figure>
-                <figure> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/hobbiton-lake.jpg" alt>
-                    <!--<figcaption>Hobbiton, New Zealand</figcaption>-->
-                </figure>
-            </figure>
-        </div>
-    </div>
-    <!--    About section-->
-    <div class="row about">
-        <header id="section2">About</header>
-        <div class="small-11 small-centered columns">
-            <p> Charts is an application that you can use to create, upload and visualize your data. It has the capability of even storing your files for future reference and sharing. </p>
-        </div>
-        <div class="row">
-            <div class="small-3 small-centered columns titanium"> Get a 200 days free trial on <a href="#">Signing up </a></div>
-        </div>
-    </div>
-    <!--    end of about section-->
-    <!--    client section-->
-    <div class="column row client">
-        <header id="section3">Our Clients</header>
-        <div class="small-11 small-centered columns"> These are our corporate clients who are already using a custom version of this tool or its equivalent.</div>
-        <div class="row faking">
-            <div class="large-3 columns">
-                <div class="row">
-                    <div class="large-6 columns"> <img src="imgs/clients/1.jpg"> </div>
-                    <div class="large-6 columns">
-                        <p class="company"> <a href="www.florensis.com">Florensis</a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="large-3 columns">
-                <div class="row">
-                    <div class="large-6 columns"> <img src="imgs/clients/2.jpg"> </div>
-                    <div class="large-6 columns">
-                        <p class="company"> <a href="www.brighermonday.com">Brighter Monday</a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="large-3 columns">
-                <div class="row">
-                    <div class="large-6 columns"> <img src="imgs/clients/3.jpg"> </div>
-                    <div class="large-6 columns">
-                        <p class="company"> <a href="www.chasebankkenya.com">Cheki Ltd</a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="large-3 columns">
-                <div class="row">
-                    <div class="large-6 columns"> <img src="imgs/clients/4.jpg"> </div>
-                    <div class="large-6 columns">
-                        <p class="company"> <a href="www.cheki.co.ke">Chase Bank</a> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  end of clients-->
-    <!--    contact area-->
-    <div class="column row contact">
-        <header id="section4">contact us</header>
-        <div class="small-11 small-centered columns"> Feel free to let us know your experience using this application.</div>
-        <div class="column row">
-            <form method="post">
-                <div class="row">
-                    <div class="small-11 small-centered columns">
-                        <input type="text" name="name" placeholder="Name" class="formspree" /> </div>
-                </div>
-                <div class="row">
-                    <div class="large-6 columns mailer">
-                        <div class="row">
-                            <div class="small-11 small-centered columns">
-                                <input type="email" name="email" placeholder="Email" class="formspree email" /> </div>
-                        </div>
-                    </div>
-                    <div class="large-6 columns mailer">
-                        <div class="row">
-                            <div class="small-11 small-centered columns">
-                                <input type="number" name="phone" placeholder="Your Phone" class="formspree number" /> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-11 small-centered columns">
-                        <textarea name="message" placeholder="Message" class="formspree"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="row">
-                        <input type="submit" value="Send Message" class="hiring" /> </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!--    end of contact-->
-    <!--    footer-->
-    <footer>
-        <div class="row">
-            <div class="large-6 columns mailer">
-                <p> © 2016 Charts</p>
-            </div>
-            <div class="large-6 columns mailer">
-                <p> Charts.co.ke is a Product of <a href="www.datascience.co.ke">DataScience Ltd</a>.</p>
-            </div>
-        </div>
-    </footer>
-    <!--    end of footer-->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/smooth.js"></script>
+	<!--HEADER SECTION-->
+	<div class="expanded row home">
+		<header>
+			<div id="cd-logo">
+				<a href="#0"><img src="imgs/logo/charts_full_logo.png" alt="Logo" class="logo"></a>
+			</div>
+			<h1>Data Made Simple</h1> </header>
+		<div id="cd-nav"> <a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+			<nav id="cd-main-nav">
+				<ul>
+					<li><a href="#0"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+					<li><a href="#0"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Demo</a></li>
+					<li><a href="#0"><i class="fa fa-money" aria-hidden="true"></i> Pricing</a></li>
+					<li><a href="#0"><i class="fa fa-users" aria-hidden="true"></i> Clients</a></li>
+					<li><a href="#0"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+					<li><a href="#0"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign-up/Login</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="small-11 small-centered columns">
+				<p class="">First Slide text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-6 large-centered columns"> <span class="scroll-btn">
+				<a href="#">
+					<span class="mouse">
+						<span>
+						</span> </span>
+				</a>
+				
+				</span>
+			</div>
+		</div>
+	</div>
+	<!--	END OF HEADER SECTION-->
+	<!--	ABOUT SECTION-->
+	<div class="row about">
+		<h2>About Charts</h2>
+		<p class="line"> Charts is an application that you can use to create, upload and visualize your data. It has the capability of even storing your files for future reference and sharing.</p>
+		<p class="line_2"> Get a 200 days free trial on <a href="#">Signing up </a></p>
+		<div class="small-2 large-4 columns bar"> <i class="fa fa-list fa-4x" aria-hidden="true"></i>
+			<h4>Create</h4>
+			<p>Create .CSV files or upload</p>
+		</div>
+		<div class="small-4 large-4 columns bar"> <i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i>
+			<h4>Edit</h4>
+			<p>Edit your uploaded files</p>
+		</div>
+		<div class="small-6 large-4 columns bar"> <i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i>
+			<h4>Visualize</h4>
+			<p>Choose a visualization tool, get a graphical representation of your data.</p>
+		</div>
+	</div>
+	<!--	END OF ABOUT SECTION-->
+	<!--    client section-->
+	<div class="row customer">
+		<h2>Our Clients</h2>
+		<p class="line"> These are our corporate clients who are already using a custom version of this tool or its equivalent.</p>
+		<div class="row faking">
+			<div class="large-3 columns">
+				<div class="row">
+					<div class="large-6 columns line"> <img src="imgs/clients/1.jpg" class="lo-cli"> </div>
+					<div class="large-6 columns line">
+						<h4>Florensis</h4>
+						<p class="company">
+							<a href="www.florensis.com"> <i class="fa fa-link fa-2x" aria-hidden="true"></i> </a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="large-3 columns">
+				<div class="row">
+					<div class="large-6 columns line"> <img src="imgs/clients/2.jpg" class="lo-cli"> </div>
+					<div class="large-6 columns line">
+						<h4>Brighter Monday</h4>
+						<p class="company">
+							<a href="www.brighermonday.com"> <i class="fa fa-link fa-2x" aria-hidden="true"></i> </a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="large-3 columns">
+				<div class="row">
+					<div class="large-6 columns line"> <img src="imgs/clients/3.jpg" class="lo-cli"> </div>
+					<div class="large-6 columns line">
+						<h4>Cheki.Ltd</h4>
+						<p class="company">
+							<a href="www.chasebankkenya.com"> <i class="fa fa-link fa-2x" aria-hidden="true"></i> </a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="large-3 columns">
+				<div class="row">
+					<div class="large-6 columns line"> <img src="imgs/clients/4.jpg" class="lo-cli"> </div>
+					<div class="large-6 columns line">
+						<h4>Chase Bank</h4>
+						<p class="company">
+							<a href="www.cheki.co.ke"> <i class="fa fa-link fa-2x" aria-hidden="true"></i> </a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  end of clients-->
+	<!--    contact area-->
+	<div class="expanded row contact">
+		<h2>Contact Us</h2>
+		<p class="line"> Feel free to let us know your experience using this application.</p>
+		<div class="row">
+			<form>
+				<div class="small-11 small-centered columns">
+					<div class="row">
+						<label>
+							<input type="text" placeholder="Full Names*"> </label>
+					</div>
+					<div class="row">
+						<div class="medium-6 columns">
+							<label>
+								<input type="text" placeholder="Email*" class="email"> </label>
+						</div>
+						<div class="medium-6 columns">
+							<label>
+								<input type="text" placeholder="Phone Number*" class="number"> </label>
+						</div>
+					</div>
+					<label>
+						<textarea placeholder="Enter your message"></textarea>
+					</label>
+					<div class="row">
+						<div class="row">
+							<input type="submit" value="Send Message" class="hiring" /> </div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--    end of contact-->
+	<!--    footer-->
+	<footer>
+		<div class="row">
+			<div class="large-6 columns mailer">
+				<p> © 2016 Charts</p>
+			</div>
+			<div class="large-6 columns mailer">
+				<p> Charts.co.ke is a Product of <a href="www.datascience.co.ke">DataScience Ltd</a>.</p>
+			</div>
+		</div>
+	</footer>
+	<!--    end of footer-->
+	<!--	<main>-->
+	<!--
+		<ul id="cd-gallery-items" class="cd-container">
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+			<li> <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb_1.jpg" alt="Preview image"> </li>
+		</ul>
+-->
+	<!-- cd-gallery-items -->
+	<!--	</main>-->
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>
