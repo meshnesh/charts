@@ -1,28 +1,26 @@
-
 // ------------------------------
 // SMOOTH SCROLL
 // ------------------------------
 function scrollNav() {
-    $('.nav a').click(function () {
-        //Toggle Class
-        $(".active").removeClass("active");
-        $(this).closest('li').addClass("active");
-        var theClass = $(this).attr("class");
-        $('.' + theClass).parent('li').addClass('active');
-        //Animate
-        $('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 160
-        }, 400);
-        return false;
-    });
-    $('.scrollTop a').scrollTop();
+	$('.nav a').click(function () {
+		//Toggle Class
+		$(".active").removeClass("active");
+		$(this).closest('li').addClass("active");
+		var theClass = $(this).attr("class");
+		$('.' + theClass).parent('li').addClass('active');
+		//Animate
+		$('html, body').stop().animate({
+			scrollTop: $($(this).attr('href')).offset().top - 160
+		}, 400);
+		return false;
+	});
+	$('.scrollTop a').scrollTop();
 }
 scrollNav();
 // ------------------------------
 // SMOOTH SCROLL END
 // ------------------------------
 // ********************************************************
-
 jQuery(document).ready(function ($) {
 	// browser window scroll (in pixels) after which the "menu" link is shown
 	var offset = 300;
@@ -71,4 +69,56 @@ jQuery(document).ready(function ($) {
 		}
 	}
 });
-
+//SLIDER
+config = {
+	timeout: 4000
+	, speed: 190
+	, spread: 20
+}
+var currentSlide = 0
+	, nextSlide = 0
+	, output = ''
+	, characters = []
+	, maxChars, slides, slidesTexts;
+callback = function ()  {
+	if (currentSlide++ >= slides.length - 1) currentSlide = 0;
+	setTimeout(formatText, config.timeout);
+}
+formatText = function () {
+	// calculate the next slide index
+	nextSlide = (currentSlide + 1 >= slides.length) ? 0 : currentSlide + 1;
+	// Fill the characters array if not already defined
+	if (characters[currentSlide] == undefined) characters[currentSlide] = slides[currentSlide].innerHTML.split('');
+	if (characters[nextSlide] == undefined) characters[nextSlide] = slides[nextSlide].innerHTML.split('');
+	maxChars = Math.max(characters[currentSlide].length, characters[nextSlide].length);
+	var fragment = document.createDocumentFragment();
+	for (var i = 0; i < maxChars; ++i) {
+		// create all elements
+		var duration = config.speed / 1000;
+		var delay = i * (config.speed / 1000 / config.spread);
+		var front = document.createElement("span");
+		front.className = "front";
+		var styleFront = '-webkit-animation-delay: ' + delay + 's, ' + (delay + duration) + 's; -webkit-animation-duration: ' + duration + 's, 0.01s;' + '-moz-animation-delay: ' + delay + 's, ' + (delay + duration) + 's; -moz-animation-duration: ' + duration + 's, 0.01s;';
+		front.setAttribute('style', styleFront);
+		front.innerHTML = characters[currentSlide][i] || ' ';
+		var back = document.createElement("span");
+		back.className = "back";
+		var styleBack = '-webkit-animation-delay: ' + (delay + duration) + 's, ' + (delay + duration) + 's; -webkit-animation-duration: ' + duration + 's, 0.01s;' + '-moz-animation-delay: ' + (delay + duration) + 's, ' + (delay + duration) + 's; -moz-animation-duration: ' + duration + 's, 0.01s';
+		back.setAttribute('style', styleBack);
+		back.innerHTML = characters[nextSlide][i] || ' ';
+		var char = document.createElement("span");
+		char.className = "char";
+		char.appendChild(front)
+		char.appendChild(back);
+		fragment.appendChild(char);
+	}
+	setTimeout(function () {
+		callback();
+	}, maxChars * (config.speed / config.spread) + config.speed);
+	slides[0].innerHTML = "";
+	slides[0].appendChild(fragment);
+};
+slides = document.getElementsByClassName('slide');
+currentSlide = 0;
+nextSlide = 1;
+formatText();
