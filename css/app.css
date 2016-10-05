@@ -508,11 +508,6 @@ nav.scrolling {
 	.logo {
 		float: left;
 	}
-	/*
-	.scroll-btn .mouse {
-		display: none;
-	}
-*/
 }
 
 @media only screen and (max-width: 650px) {
@@ -538,11 +533,6 @@ nav.scrolling {
 		transition: .5s;
 		z-index: 10;
 	}
-	/*
-	.scroll-btn .mouse {
-	display: none;
-}
-*/
 }
 
 @media only screen and (max-width: 450px) {
