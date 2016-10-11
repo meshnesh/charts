@@ -1,60 +1,105 @@
 <!doctype html>
-<html lang="en">
+<html class="no-js" lang="en" dir="ltr">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Charts</title>
-	<link rel="icon" href="imgs/logo/charts_favicon.png" type="image/gif">
-	<link rel="stylesheet" href="css/foundation.css">
+	<title>Foundation for Sites</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/foundation.min.css">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="css/app.css"> </head>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/app1.css"> </head>
 
 <body>
-	<!--HEADER SECTION-->
+	<nav class="nav ">
+		<div class="nav-center"> <a class="toggle-nav" href="#">&#9776;</a>
+			<div class="nav-mobile">
+				<ul class="nav">
+					<li> <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a> </li>
+					<li><a href="#"><i class="fa fa-book"></i> About</a></li>
+					<li><a href="#"><i class="fa fa-fire"></i> Demo</a></li>
+					<li> <a href="#"><i class="fa fa-user"></i> Pricing</a> </li>
+					<li class="button-dropdown"> <a href="javascript:void(0)" class="dropdown-toggle"><i class="fa fa-phone"></i> Contact <span>▼</span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">
+									<label>
+										<input type="text" placeholder="Name"> </label>
+									<label>
+										<input type="text" placeholder="Email"> </label>
+									<label>
+										<input type="text" placeholder="Phone Number"> </label>
+									<label>
+										<textarea placeholder="Your message"></textarea>
+									</label>
+									<input type="submit" value="Send Message" class="hiring" /> </a>
+							</li>
+						</ul>
+					</li>
+					<li> <a href="#"><i class="fa fa-user"></i> Sign Up/ Login</a> </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<div class="expanded row home">
-		<p id="section1"></p>
-		<header>
-			<div class="column row">
-				<nav class="nav ">
-					<div class="nav-center"> <a class="toggle-nav" href="#">&#9776;</a>
-						<div class="nav-mobile">
-							<ul class="left">
-								<a href="#home"><img src="imgs/logo/charts_web_logo.png" class="logo"></a>
-								<li><a id="link1" href="#section1" class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-								<li><a id="link2" href="#section2"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
-								<li><a href="#0"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Demo</a></li>
-								<li><a href="#0"><i class="fa fa-money" aria-hidden="true"></i> Pricing</a></li>
-								<li><a id="link4" href="#section4"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
-								<li><a href="#0"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign-up/Login</a></li>
-							</ul>
+		<div class="row junior">
+			<!--			data creation-->
+			<div class="large-6 columns">
+				<div class="row">
+					<div id="first" class="row">
+						<div class="large-6 columns icons"> <i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i> </div>
+						<div id="first_a" class="large-6 columns">
+							<p>- Year</p>
 						</div>
 					</div>
-				</nav>
-			</div>
-			<h1>Data Made Simple</h1> </header>
-		<div class="row dancer">
-			<div class="small-11 small-centered columns">
-				<div class="container">
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, dicta, soluta neque commodi earum esse minima beatae animi debitis officiis aut fuga voluptatem autem facilis dolorem quae cumque quam praesentium!</div>
-					<div class="slide">Possimus, asperiores, repellendus, dolore quidem ducimus voluptatum exercitationem maxime mollitia ea repellat iste ipsum quas cumque.</div>
-					<div class="slide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, eos, sit quam perferendis dicta sunt reiciendis nostrum autem nesciunt ex numquam !</div>
 				</div>
-			</div>
+				<div id="second" class="row">
+					<div class="large-6 columns icons"> <i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i> </div>
+					<div id="second_a" class="large-6 columns">
+						<p>- Country</p>
+					</div>
+				</div>
+				<div id="third" class="row">
+					<div class="large-6 columns icons"> <i class="fa fa-square-o fa-3x" aria-hidden="true"></i> </div>
+					<div id="third_a" class="large-6 columns">
+						<p>- Data</p>
+					</div>
+				</div>
+				<!--				<h1>Create</h1> --></div>
+			<!--			end of data creation-->
+			<!--			data visualization-->
+			<div class="large-6 columns">
+				<div class="row">
+					<div id="fourth" class="large-6 columns">
+						<div class="bar-chart-block block">
+							<h2 class='titular'>By Country <span>*1000</span></h2>
+							<div class='grafico bar-chart'>
+								<ul class='eje-y'>
+									<li data-ejeY='60'></li>
+									<li data-ejeY='45'></li>
+									<li data-ejeY='30'></li>
+									<li data-ejeY='15'></li>
+									<li data-ejeY='0'></li>
+								</ul>
+								<ul class='eje-x'>
+									<li id="ken" data-ejeX='37'><i>Kenya</i></li>
+									<li id="ugd" data-ejeX='56'><i>Uganda</i></li>
+									<li id="tnz" data-ejeX='25'><i>Tanzania</i></li>
+									<li id="eth" data-ejeX='18'><i>Ethopia</i></li>
+									<li id="sdn" data-ejeX='45'><i>Sudan</i></li>
+									<li id="cng" data-ejeX='50'><i>Congo</i></li>
+									<li id="chl" data-ejeX='33'><i>Chile</i></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="large-6 columns"> </div>
+				</div>
+				<!--				<h1>Visualize</h1>--></div>
 		</div>
-		<div class="row">
-			<div class="small-6 large-centered columns"> <span class="scroll-btn">
-				<a href="#">
-					<span class="mouse">
-						<span>
-						</span> </span>
-				</a>
-				</span>
-			</div>
-		</div>
-	</div>
-	<!--	END OF HEADER SECTION-->
+		<h1 id="fifth">Data made simple.</h1> </div>
 	<!--	ABOUT SECTION-->
 	<div class="row about">
 		<h2 id="section2">About Charts</h2>
@@ -63,68 +108,35 @@
 		<p class="line_2"> Get a 200 days free trial on <a href="#">Signing up </a></p>
 		<div class="small-2 large-4 columns bar"> <i class="fa fa-list fa-4x" aria-hidden="true"></i>
 			<h4>Create</h4>
-			<p>Create .CSV files or upload</p>
+			<p class="line_3">Create .CSV files or upload</p>
 		</div>
 		<div class="small-4 large-4 columns bar"> <i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i>
 			<h4>Edit</h4>
-			<p>Edit your uploaded files</p>
+			<p class="line_3">Edit your uploaded files</p>
 		</div>
 		<div class="small-6 large-4 columns bar"> <i class="fa fa-bar-chart fa-4x" aria-hidden="true"></i>
 			<h4>Visualize</h4>
-			<p>Choose a visualization tool, get a graphical representation of your data.</p>
+			<p class="line_3">Choose a visualization tool, get a graphical representation of your data.</p>
 		</div>
 	</div>
 	<!--	END OF ABOUT SECTION-->
-	<!--    contact area-->
-	<div class="expanded row contact">
-		<h2 id="section4">Contact Us</h2>
-		<p class="line"> Feel free to let us know your experience using this application.</p>
-		<div class="row">
-			<form>
-				<div class="small-11 small-centered columns">
-					<div class="row">
-						<label>
-							<input type="text" placeholder="Full Names*"> </label>
-					</div>
-					<div class="row">
-						<div class="medium-6 columns">
-							<label>
-								<input type="text" placeholder="Email*" class="email"> </label>
-						</div>
-						<div class="medium-6 columns">
-							<label>
-								<input type="text" placeholder="Phone Number*" class="number"> </label>
-						</div>
-					</div>
-					<label>
-						<textarea placeholder="Enter your message"></textarea>
-					</label>
-					<div class="row">
-						<div class="row">
-							<input type="submit" value="Send Message" class="hiring" /> </div>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-	<!--    end of contact-->
 	<!--    footer-->
 	<footer>
 		<div class="row">
 			<div class="large-6 columns mailer">
-				<p> © 2016 Charts</p>
+				<p class="line_3"> © 2016 Charts</p>
 			</div>
 			<div class="large-6 columns mailer">
-				<p> Charts.co.ke is a Product of <a href="www.datascience.co.ke">DataScience Ltd</a>.</p>
+				<p class="line_3"> Charts.co.ke is a Product of <a href="www.datascience.co.ke">DataScience Ltd</a>.</p>
 			</div>
 		</div>
 	</footer>
 	<!--    end of footer-->
-	<!--	</main>-->
 	<script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/what-input.js"></script>
-	<script src="js/vendor/foundation.js"></script>
-	<script src="js/app.js"></script>
+	<script src="js/vendor/foundation.min.js"></script>
+	<!--	<script src="js/app.js"></script>-->
+	<script src="js/app1.js"></script>
 </body>
 
 </html>
