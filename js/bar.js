@@ -23,12 +23,18 @@ $(document).ready(function() {
     var options = {
         chart: {
             renderTo: 'container1',
-            type: 'bar'
+            type: 'spline'
         },
         title: {
                     text: 'Json file'
                 },
-        series: [{}]
+        series: [{}],
+        navigation: {
+            buttonOptions: {
+                enabled: true
+            }
+        }
+
     };
 
     $.getJSON('data.json', function(data) {
@@ -46,33 +52,28 @@ $(document).ready(function() {
             var options = {
                 chart: {
                     renderTo: 'container',
-            		type: 'column'
+            		type: 'bar'
                 },
                 title: {
                     text: 'Fruit Consumption'
                 },
                 xAxis: {
-                    categories: []
+                    text: 'Cities'
                 },
                 yAxis: {
                     title: {
                         // text: 'Units'
-                        text: 'Bytes'
+                        text: 'Units'
                     }
                 },
-                series: []
+                series: [],
+                navigation: {
+                    buttonOptions: {
+                        enabled: true
+                    }
+                }
             };
-            
-            /*
-             Load the data from the CSV file. This is the contents of the file:
-             
-                Apples,Pears,Oranges,Bananas,Plums
-                John,8,4,6,5
-                Jane,3,4,2,3
-                Joe,86,76,79,77
-                Janet,3,16,13,15
-                
-             */ 
+        
             $.get('data.csv', function(data) {
                 // Split the lines
                 var lines = data.split('\n');
@@ -107,5 +108,5 @@ $(document).ready(function() {
                 var chart = new Highcharts.Chart(options);
             });
             
-            
-        });
+});
+
